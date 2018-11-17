@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        String url = "https://www.zhaoapi.cn/product/getCarts";
+        String url = "http://www.zhaoapi.cn/product/getCarts";
         Map<String, String> map = new HashMap<>();
         map.put("uid", "71");
         OkhtttpUtils.getInstance().doPost(url, map, new OkhtttpUtils.OkCallback() {
